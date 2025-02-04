@@ -36,6 +36,10 @@ a {
     position: relative;
 }
 
+.nav_bar .nav_items:hover {
+    color: rgb(157, 255, 0);
+}
+
 .nav_bar .nav_items::after {
     content: "";
     position: absolute;
@@ -51,6 +55,40 @@ a {
 
 .nav_bar .nav_items:hover::after {
     transform: scaleX(1);
+}
+
+.nav_bar .nav-icon {
+    display: none;
+}
+
+.nav_bar .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #04152d;
+    text-align: center;
+    padding: 10px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_bar .mobile-menu a {
+    color: white;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+    border-bottom: 1px solid #576cbc;
+}
+
+.nav_bar .mobile-menu a:hover {
+    color: rgb(157, 255, 0);
+}
+
+.nav_bar .mobile-menu {
+    display: flex;
 }
 
 /* Home */
@@ -158,7 +196,7 @@ a {
 /* About */
 
 .about {
-    width: 1110px;
+    width: 1100px;
     margin-top: 20px;
 }
 
@@ -176,7 +214,7 @@ a {
     border-radius: 100%;
     width: 280px;
     height: 280px;
-    animation: suparmen 3s infinite;
+    /* animation: suparmen 3s infinite; */
 }
 
 .about .about-content .right h5 {
@@ -243,6 +281,9 @@ a {
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
+    border: 1px solid yellow;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
 }
 
 .skills .s-items .item {
@@ -273,6 +314,8 @@ a {
     justify-content: center;
     align-items: center;
     margin: auto;
+    border: 1px solid yellow;
+    box-shadow: var(--box-shadow);
 }
 
 .projects .pro-items .item {
@@ -285,7 +328,6 @@ a {
     text-align: center;
     border-radius: 10px;
     border: 2px solid yellow;
-    box-shadow: var(--box-shadow);
 }
 
 .projects .pro-items .item .img {
@@ -347,12 +389,12 @@ a {
 
 }
 
-.contact .contact-item .contact-icon{
+.contact .contact-item .contact-icon {
     display: flex;
     gap: 15px;
-} 
+}
 
-.contact .contact-item .contact-icon .item{
+.contact .contact-item .contact-icon .item {
     background-color: black;
     height: 50px;
     width: 50px;
@@ -361,18 +403,18 @@ a {
     align-items: center;
     border-radius: 100%;
     border: 1px solid yellow;
-} 
+}
 
-.contact .contact-item .contact-icon .item .icons{
+.contact .contact-item .contact-icon .item .icons {
     font-size: 1.3rem;
-} 
+}
 
-.contact .contact-item .left .love{
+.contact .contact-item .left .love {
     font-size: 1.2rem;
     padding: 30px 0;
 }
 
-.contact .contact-item .contact-icon .item:hover{
+.contact .contact-item .contact-icon .item:hover {
     background-color: var(--color-bg);
     box-shadow: var(--box-shadow);
 }
@@ -380,6 +422,22 @@ a {
 /* responsive */
 
 @media only screen and (max-width : 550px) {
+
+    .nav_bar {
+        padding: 5px 20px;
+    }
+
+    .nav_bar .right {
+        display: none;
+    }
+
+    .nav_bar .nav-icon {
+        display: block;
+    }
+
+
+    /* home */
+
     .home {
         display: flex;
         flex-direction: column;
@@ -406,9 +464,109 @@ a {
         font-size: 2.5rem;
     }
 
+    /* About */
+
+    .about {
+        width: 100%;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about .about-content .right p {
+        font-size: 16px;
+    }
+
+    /* skill  */
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills .s-items .item {
+        width: 100%;
+    }
+
+    /* projects  */
+
+    .projects {
+        width: 100%;
+    }
+
+    .projects .pro-items {
+        flex-direction: column;
+    }
+
+    .projects .pro-items .item {
+        width: 87%;
+    }
+
+    /* experience */
+
+    .ex-con {
+        width: 100%;
+    }
+
+    .ex-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ex-con .right h2 {
+        font-size: 1.4rem;
+    }
+
+    .ex-item .right h4 .date {
+        font-size: 29px;
+        line-height: 50px;
+    }
+
+    /* contact  */
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact .cont-us {
+        margin: 20px 0;
+    }
+
+    .contact .contact-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact .contact-item .right form input,
+    .contact .contact-item .right form textarea {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:551px) and (max-width : 768px) {
+
+    .nav_bar {
+        padding: 8px 70px;
+    }
+
+    .nav_bar .right {
+        display: none;
+    }
+
+    .nav_bar .nav-icon {
+        display: block;
+    }
+
+    .nav_bar .mobile-menu a {
+        padding: 31px 0px;
+        font-size: 2rem;
+    }
+
+    /* home  */
+
     .home {
         display: flex;
         flex-direction: column;
@@ -416,11 +574,11 @@ a {
     }
 
     .home .left {
-        width: 460px;
+        width: 500px;
     }
 
     .home .left .text-wrapper h1 {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
         line-height: 4rem;
 
     }
@@ -431,12 +589,100 @@ a {
     }
 
     .home .left .text-wrapper h1 span {
-        font-size: 3.4rem;
+        font-size: 3.5rem;
     }
 
+    /* About */
+
+    .about {
+        width: 100%;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about .about-content .right p {
+        font-size: 17px;
+    }
+
+    /* skill  */
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills .s-items .item {
+        width: 44%;
+    }
+
+    /* projects  */
+
+    .projects {
+        width: 100%;
+    }
+
+    .projects .pro-items .item {
+        width: 43%;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    /* contact  */
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact .contact-item {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 1.9rem;
+    }
+
+    .contact .contact-item h3 {
+        font-size: 3rem;
+    }
+
+    .contact .contact-item .right form input,
+    .contact .contact-item .right form textarea {
+        width: 530px;
+    }
+
+    .contact .contact-item .contact-icon .item .icons {
+        font-size: 2.3rem;
+    }
+
+    .contact .contact-item .contact-icon .item {
+        height: 90px;
+        width: 90px;
+    }
+
+    .contact .contact-item .left .love {
+        font-size: 2rem;
+        
+    }
 }
 
 @media only screen and (min-width:769px) and (max-width : 990px) {
+
+    .nav_bar {
+        padding: 13px 16px;
+    }
+
+    .nav_bar .nav_items {
+        padding: 9px;
+        font-size: 1.4rem;
+    }
+
+    /* home  */
+
+
     .home {
         display: flex;
         flex-direction: column;
@@ -467,4 +713,71 @@ a {
         width: 390px;
     }
 
+    /* About */
+
+    .about {
+        width: 100%;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* skill  */
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills .s-items .item {
+        width: 44%;
+    }
+
+    /* project */
+
+    .projects {
+        width: 100%;
+    }
+
+    .projects .pro-items .item {
+        width: 43%;
+    }
+
+        /* contact  */
+
+        .contact {
+            width: 100%;
+        }
+    
+        .contact .contact-item {
+            flex-direction: column;
+            gap: 15px;
+            font-size: 1.9rem;
+        }
+    
+        .contact .contact-item h3 {
+            font-size: 3rem;
+        }
+    
+        .contact .contact-item .right form input,
+        .contact .contact-item .right form textarea {
+            width: 530px;
+        }
+    
+        .contact .contact-item .contact-icon .item .icons {
+            font-size: 2.3rem;
+        }
+    
+        .contact .contact-item .contact-icon .item {
+            height: 90px;
+            width: 90px;
+        }
+    
+        .contact .contact-item .left .love {
+            font-size: 2rem;
+            
+        }
 }

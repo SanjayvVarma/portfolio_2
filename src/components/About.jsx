@@ -15,7 +15,7 @@ const About = () => {
                             Hi, I'm <b>Sanjay</b>, a Full Stack Web Developer with expertise in both frontend and backend development. I enjoy building scalable, user-friendly web applications that deliver smooth and seamless experiences. I’m always eager to learn new technologies and apply them to solve real-world problems.
                         </p>
 
-                        <h5>Tech Stack</h5>
+                        <h5>Tech Stack :-</h5>
                         <div>
                             <span>💻 Frontend :-</span> React.js (Vite), HTML, CSS, JavaScript <br />
                             <span>⚙️ Backend :-</span> Node.js, Express.js <br />
