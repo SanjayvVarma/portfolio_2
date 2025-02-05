@@ -5,7 +5,7 @@ import './experience.css'
 const Experience = () => {
   return (
     <>
-      <div className="container ex-con" id='exprience'>
+      <div className="container ex-con" id='experience'>
         <h2 className='text-center'>EXPERIENCE</h2>
         {
           experiences.map((data) => (

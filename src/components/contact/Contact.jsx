@@ -8,7 +8,7 @@ const Contact = () => {
     <>
       <div className="container contact" id='contact'>
         <h2 className='text-center'>CONTACT ME</h2>
-        <div className='cont-us' data-aos='zoom-in' data-aos-duration='700'>
+        <div className='cont-us my-5' data-aos='zoom-in' data-aos-duration='700'>
           <div className='text-center'>
             <h5>Hy 👋,</h5>
             <h3>SEND ME A MESSAGE</h3>

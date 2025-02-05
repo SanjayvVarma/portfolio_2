@@ -74,6 +74,10 @@
     display: flex;
 }
 
+.nav_items.active {
+    color: rgb(157, 255, 0);
+    font-weight: bold;
+  }
 
 @media only screen and (max-width : 550px) {
 
