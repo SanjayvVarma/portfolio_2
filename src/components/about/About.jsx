@@ -1,5 +1,6 @@
 import React from 'react'
-import imgSrc from '../assets/myImg.jpg'
+import imgSrc from '../../assets/mydimg.png';
+import './about.css';
 
 const About = () => {
     return (

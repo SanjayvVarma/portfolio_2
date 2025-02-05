@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import imgSrc from '../assets/hero.avif';
+import imgSrc from '../../assets/hero.avif';
 import TypingAnimator from 'react-typing-animator';
-import resumePdf from '../assets/SanjayResume.pdf';
+import resumePdf from '../../assets/SanjayResume.pdf';
+import './home.css';
 
 const Home = () => {
 

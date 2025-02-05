@@ -1,0 +1,90 @@
+.about {
+    width: 1100px;
+    margin-top: 20px;
+}
+
+.about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 30px;
+    border: 1px solid yellow;
+    box-shadow: var(--box-shadow);
+}
+
+.about .about-content .left img {
+    border-radius: 10%;
+    width: 280px;
+    height: 280px;
+}
+
+.about .about-content .right h5 {
+    color: yellow;
+}
+
+.about .about-content .right p {
+    font-size: 18px;
+}
+
+.about .about-content .right div {
+    color: yellow;
+}
+
+.about .about-content .right div span {
+    color: #fff;
+}
+
+
+@media only screen and (max-width : 550px) {
+
+    .about {
+        width: 100%;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about .about-content .right p {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (min-width:551px) and (max-width : 768px) {
+
+    .about {
+        width: 100%;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about .about-content .right p {
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (min-width:769px) and (max-width : 990px) {
+
+    .about {
+        width: 100%;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+}

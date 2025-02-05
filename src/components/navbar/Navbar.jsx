@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { FaBars, FaHome } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
+import './navbar.css';
 
 const Navbar = () => {
 
