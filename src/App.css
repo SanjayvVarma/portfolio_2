@@ -11,3 +11,7 @@ a {
     text-decoration: none;
     color: var(--color-text);
 }
+
+.container {
+    padding-top: 70px;
+}
