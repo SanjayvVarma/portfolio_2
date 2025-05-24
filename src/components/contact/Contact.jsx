@@ -1,6 +1,6 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
 import './contact.css';  
+import { IoMail } from "react-icons/io5";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
   return (

@@ -1,6 +1,5 @@
-import React from 'react'
-import experiences from '../../data/experience'
-import './experience.css'
+import './experience.css';
+import experiences from '../../data/experience';
 
 const Experience = () => {
   return (

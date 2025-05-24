@@ -1,6 +1,5 @@
-import React from 'react'
-import skills from '../../data/skills'
 import './skills.css';
+import skills from '../../data/skills';
 
 const Skills = () => {
   return (
@@ -14,7 +13,6 @@ const Skills = () => {
                 <img src={skill.imageSrc} alt={skill.title} />
                 <h3>{skill.title}</h3>
               </div>
-
             ))
           }
         </div>

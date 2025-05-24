@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
-import { HiX } from 'react-icons/hi';
 import './navbar.css';
+import { useState } from 'react';
+import { HiX } from 'react-icons/hi';
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);

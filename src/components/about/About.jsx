@@ -1,6 +1,5 @@
-import React from 'react'
-import imgSrc from '../../assets/mydimg.png';
 import './about.css';
+import imgSrc from '../../assets/mydimg.png';
 
 const About = () => {
     return (
