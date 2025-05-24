@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import './contact.css';  
