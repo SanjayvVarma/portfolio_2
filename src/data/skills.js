@@ -44,6 +44,10 @@ const skills = [
     {
         title: "Express",
         imageSrc: express
+    },
+    {
+        title: "Express",
+        imageSrc: express
     }
 ]
 
