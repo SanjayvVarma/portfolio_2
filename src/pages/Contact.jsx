@@ -1,13 +1,40 @@
 import { IoMail } from "react-icons/io5";
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Footer from "../components/Footer";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
+
+  const socialIcons = [
+    {
+      href: "https://github.com/SanjayvVarma",
+      icon: <FaGithub className="text-xl" />,
+      label: "GitHub",
+    },
+    {
+      href: "https://www.instagram.com/sanjayazad_/",
+      icon: <FaInstagram className="text-xl" />,
+      label: "Instagram",
+    },
+    {
+      href: "https://www.linkedin.com/in/sanjaykvarma/",
+      icon: <FaLinkedin className="text-xl" />,
+      label: "LinkedIn",
+    },
+    {
+      href: "https://twitter.com/SanjayAzad_",
+      icon: <FaTwitter className="text-xl" />,
+      label: "Twitter",
+    },
+    {
+      href: "mailto:skvarma914@gmail.com",
+      icon: <IoMail className="text-xl" />,
+      label: "Email",
+    },
+  ]
+
   return (
-    <div
-      id="contact"
-      className="bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white px-4 py-10 md:px-10 lg:px-20"
-    >
+    <section id="contact" className="bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white px-4 py-10 md:px-10 lg:px-20">
+
       <h2 className="text-4xl md:text-5xl font-extrabold mb-10 text-cyan-400 tracking-wide drop-shadow-lg text-center">
         CONTACT ME
       </h2>
@@ -25,40 +52,13 @@ const Contact = () => {
         <hr className="border-yellow-400 mb-6" />
 
         <div className="flex flex-col lg:flex-row justify-between gap-10">
-          {/* Left Side */}
           <div className="w-full lg:w-1/2 flex flex-col gap-4">
             <h3 className="text-2xl md:text-3xl font-semibold">Getting in touch is easy!</h3>
             <p className="text-lg">📞 900XXXXXXX</p>
             <p className="text-lg">✉️ skvarma914@gmail.com</p>
 
             <div className="flex gap-4 flex-wrap mt-4">
-              {[
-                {
-                  href: "https://github.com/SanjayvVarma",
-                  icon: <FaGithub className="text-xl" />,
-                  label: "GitHub",
-                },
-                {
-                  href: "https://www.instagram.com/sanjayazad_/",
-                  icon: <FaInstagram className="text-xl" />,
-                  label: "Instagram",
-                },
-                {
-                  href: "https://www.linkedin.com/in/sanjaykvarma/",
-                  icon: <FaLinkedin className="text-xl" />,
-                  label: "LinkedIn",
-                },
-                {
-                  href: "https://twitter.com/SanjayAzad_",
-                  icon: <FaTwitter className="text-xl" />,
-                  label: "Twitter",
-                },
-                {
-                  href: "mailto:skvarma914@gmail.com",
-                  icon: <IoMail className="text-xl" />,
-                  label: "Email",
-                },
-              ].map((item, index) => (
+              {socialIcons.map((item, index) => (
                 <a
                   key={index}
                   href={item.href}
@@ -77,7 +77,6 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Right Side - Form */}
           <div className="w-full lg:w-1/2">
             <form
               onSubmit={(e) => e.preventDefault()}
@@ -111,9 +110,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
       <Footer />
-    </div>
+    </section>
   );
 };
 
