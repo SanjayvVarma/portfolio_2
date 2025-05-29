@@ -2,17 +2,14 @@ import projects from '../data/projects';
 import { FaExternalLinkAlt, FaCode } from 'react-icons/fa';
 
 const Projects = () => {
+
   return (
-    <section
-      id="projects"
-      className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white px-6 py-24 flex flex-col items-center relative"
-    >
-      {/* Heading */}
+    <section id="projects" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white px-6 py-24 flex flex-col items-center relative">
+  
       <h2 className="text-4xl sm:text-5xl font-extrabold mb-16 text-cyan-400 tracking-wider drop-shadow-lg text-center">
         PROJECTS
       </h2>
 
-      {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-7xl w-full">
         {projects.map((project) => (
           <div
@@ -21,12 +18,10 @@ const Projects = () => {
             data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
-            {/* Gradient Border Effect */}
             <div className="absolute -inset-[2px] bg-gradient-to-br from-cyan-500 via-purple-500 to-yellow-400 rounded-2xl blur-xl opacity-60 group-hover:opacity-90 transition duration-500 pointer-events-none"></div>
 
-            {/* Card Content */}
             <div className="relative bg-gray-900/70 backdrop-blur-md border border-gray-700 rounded-2xl h-full flex flex-col">
-              {/* Project Image */}
+  
               <div className="h-52 overflow-hidden rounded-t-2xl">
                 <img
                   src={project.imageSrc}
@@ -35,7 +30,6 @@ const Projects = () => {
                 />
               </div>
 
-              {/* Text Content */}
               <div className="flex flex-col justify-between flex-grow p-6 space-y-4">
                 <div>
                   <h3 className="text-2xl font-bold text-cyan-400 mb-2 tracking-wide">
@@ -46,8 +40,8 @@ const Projects = () => {
                   </p>
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex justify-between pt-2">
+
                   <a
                     href={project.demo}
                     target="_blank"
@@ -56,6 +50,7 @@ const Projects = () => {
                   >
                     Demo <FaExternalLinkAlt />
                   </a>
+
                   <a
                     href={project.source}
                     target="_blank"
@@ -64,17 +59,21 @@ const Projects = () => {
                   >
                     Code <FaCode />
                   </a>
+
                 </div>
+                
               </div>
             </div>
           </div>
         ))}
       </div>
-       <div className="absolute md:bottom-0 bottom-2 left-1/2 transform -translate-x-1/2">
+
+      <div className="absolute md:bottom-0 bottom-2 left-1/2 transform -translate-x-1/2">
         <div className="w-6 h-10 border-2 border-cyan-400 rounded-full flex items-start justify-center p-1 animate-bounce">
           <div className="w-2 h-2 bg-cyan-400 rounded-full" />
         </div>
       </div>
+
     </section>
   );
 };
