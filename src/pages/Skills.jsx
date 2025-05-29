@@ -1,17 +1,14 @@
 import skills from '../data/skills';
 
 const Skills = () => {
+
   return (
-    <section
-      id="skills"
-      className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white flex flex-col items-center px-6 py-14 relative"
-    >
-      {/* Heading */}
+    <section id="skills" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white flex flex-col items-center px-6 py-14 relative">
+
       <h2 className="text-4xl sm:text-5xl font-extrabold mb-10 text-cyan-400 tracking-wider drop-shadow-lg text-center">
         SKILLS
       </h2>
 
-      {/* Skill Items Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-5 max-w-4xl w-full">
         {skills.map((skill) => (
           <div
@@ -28,12 +25,15 @@ const Skills = () => {
             <h3 className="text-lg font-semibold text-center">{skill.title}</h3>
           </div>
         ))}
+
       </div>
-       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
         <div className="w-6 h-10 border-2 border-cyan-400 rounded-full flex items-start justify-center p-1 animate-bounce">
           <div className="w-2 h-2 bg-cyan-400 rounded-full" />
         </div>
       </div>
+
     </section>
   );
 };
