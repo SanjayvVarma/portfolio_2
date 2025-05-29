@@ -47,7 +47,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
         <div className="w-6 h-10 border-2 border-cyan-400 rounded-full flex items-start justify-center p-1 animate-bounce">
           <div className="w-2 h-2 bg-cyan-400 rounded-full" />
         </div>
