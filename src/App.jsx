@@ -8,7 +8,6 @@ import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import Experience from './pages/Experience';
 
 function App() {
