@@ -3,14 +3,14 @@ import imgSrc from '../assets/mydimg.png';
 const About = () => {
 
   return (
-    <section id="about" className="min-h-screen bg-gradient-to-br from-purple-950 via-gray-800 to-black text-white flex flex-col items-center px-6 py-14 relative">
+    <section id="about" className="bg-gradient-to-br from-purple-950 via-gray-800 to-black text-white flex flex-col items-center px-6 py-14 relative">
 
       <h1 className="text-4xl sm:text-5xl font-extrabold mb-10 text-center w-full max-w-7xl tracking-wide text-cyan-400 drop-shadow-lg">
         About Me
       </h1>
 
       <div
-        className="flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl w-full gap-16 md:gap-24"
+        className="flex flex-col-reverse md:flex-row items-center justify-between max-w-7xl w-full gap-16 md:gap-24 pt-6 pb-17"
         data-aos="flip-up"
         data-aos-duration="1000"
       >
@@ -44,7 +44,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="absolute md:bottom-15 bottom-2 left-1/2 transform -translate-x-1/2">
+      <div className="absolute md:bottom-0 bottom-2 left-1/2 transform -translate-x-1/2">
         <div className="w-6 h-10 border-2 border-cyan-400 rounded-full flex items-start justify-center p-1 animate-bounce">
           <div className="w-2 h-2 bg-cyan-400 rounded-full" />
         </div>
