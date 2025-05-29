@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import Experience from './pages/Experience';
 
 function App() {
+
   useEffect(() => {
     Aos.init({
       duration: 1000,
