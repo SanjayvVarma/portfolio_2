@@ -5,6 +5,13 @@ This React-based website showcases my **professional experience**, **contact inf
 
 ---
 
+### 🌐 Live Demo
+
+Check out the live version of the portfolio here:  
+👉 [https://portfolio2-sanjay-varma.vercel.app](https://portfolio2-sanjay-varma.vercel.app)
+
+---
+
 ## 🚀 Features
 
 - **Experience Section**  
@@ -40,18 +47,18 @@ This React-based website showcases my **professional experience**, **contact inf
 
 1. Clone the repo  
    ```bash
-   git clone https://github.com/SanjayvVarma/portfolio-website.git
-   cd portfolio-website
+   git clone https://github.com/SanjayvVarma/portfolio_v2.git
+   cd portfolio_v2
    npm install
-   npm start
+   npm run dev
 
 - Open http://localhost:5173 in your browser to view the website.
 
+---
 
 Made with ❤️ by Sanjay Varma
-
-
 ---
 
 Would you like me to help you set up this README in your project or customize it further for your needs?
 
+---
