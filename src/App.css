@@ -1,17 +1,85 @@
-:root {
-    --color-text: #fff;
-    --color-primary: #576cbc;
-    --color-secondary: #19376d;
-    --color-dark: #0b2447;
-    --color-bg: #282F61;
-    --box-shadow: 5px 5px 10px 5px #65AF0A90
+.borderAnimation {
+    animation: borderColorChange 3s linear infinite;
 }
 
-a {
-    text-decoration: none;
-    color: var(--color-text);
+.typingEffectAnimations {
+    animation: typingEffectAnimation 3s steps(30, end);
 }
 
-.container {
-    padding-top: 70px;
+.imgBorderAnimate{ 
+    animation: suparmen 3s infinite;
+}
+
+.active-link {
+    color: #9dff00;
+}
+
+.active-link::after {
+    transform: scaleX(1);
+}
+
+@keyframes typingEffectAnimation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes suparmen {
+    0% {
+        border-color: blue;
+        transform: translate(0, 0px);
+        box-shadow: 5px 5px 25px 13px blue;
+    }
+
+    25% {
+        border-color: #EFF40B;
+        box-shadow: 5px 5px 25px 13px #EFF40B;
+    }
+
+    50% {
+        border-color: #0C0CC7;
+        transform: translate(0, 10px);
+        box-shadow: 5px 5px 25px 13px #0C0CC7;
+    }
+
+    75% {
+        border-color: #82D9A0;
+        box-shadow: 5px 5px 25px 13px #82D9A0;
+    }
+
+    100% {
+        border-color: #3237CD;
+        transform: translate(0, -0px);
+        box-shadow: 5px 5px 25px 13px #3237CD;
+    }
+}
+
+@keyframes borderColorChange {
+    0% {
+        border-color: blue;
+    }
+
+    20% {
+        border-color: red;
+    }
+
+    40% {
+        border-color: yellow;
+    }
+
+    60% {
+        border-color: green;
+    }
+
+    80% {
+        border-color: cyan;
+    }
+
+    100% {
+        border-color: rgb(48, 48, 182);
+    }
 }

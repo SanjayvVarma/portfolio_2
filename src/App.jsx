@@ -1,37 +1,36 @@
 import './App.css';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import Home from './pages/Home';
+import About from './pages/About';
 import { useEffect } from 'react';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Navbar from './components/navbar/Navbar';
-import Skills from './components/skills/Skills';
-import Contact from './components/contact/Contact';
-import Projects from './components/project/Projects';
-import Experience from './components/experience/Experience';
+import Skills from './pages/Skills';
+import Contact from './pages/Contact';
+import Projects from './pages/Projects';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Experience from './pages/Experience';
 
 function App() {
-
   useEffect(() => {
-    Aos.init()
-  }, [])
+    Aos.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  }, []);
 
   return (
-    <>
+    <div>
       <Navbar />
-      <div className="container">
-        <Home />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Contact />
-      </div>
-      <footer>
-        <p className='text-center'>© {new Date().toLocaleString('default', { month: 'long' })} {new Date().getFullYear()} Sanjay. All rights reserved.</p>
-      </footer>
-    </>
-  )
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
+    </div>
+  );
 }
 
-export default App
+export default App;
