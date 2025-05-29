@@ -4,9 +4,9 @@ import { FaExternalLinkAlt, FaCode } from 'react-icons/fa';
 const Projects = () => {
 
   return (
-    <section id="projects" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white px-6 py-24 flex flex-col items-center relative">
+    <section id="projects" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-purple-950 text-white px-6 pt-5 pb-14 flex flex-col items-center relative">
   
-      <h2 className="text-4xl sm:text-5xl font-extrabold mb-16 text-cyan-400 tracking-wider drop-shadow-lg text-center">
+      <h2 className="text-4xl sm:text-5xl font-extrabold mb-14 text-cyan-400 tracking-wider drop-shadow-lg text-center">
         PROJECTS
       </h2>
 
